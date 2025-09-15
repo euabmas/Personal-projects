@@ -23,7 +23,7 @@
         </div>
         <nav>
             <ul class="desktop-nav">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#produtos-lista">Produtos</a></li>
                 <li><a href="#feedbacks">Feedbacks</a></li>
                 <li>
@@ -104,307 +104,599 @@
         </div>
 
         <section id="produtos-lista">
-            <h2>Nossos Produtos</h2>
-            <div class="products-arrows">
+            <h2>Nossas Camisas de Time</h2>
+            <div class="products-container">
                 <button id="products-prev" class="arrow-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="./img/camisa-real-madrid-2025.jpg" alt="Camisa Real Madrid 2025/26">
+                        <div class="discount-badge">Lançamento</div>
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Real Madrid 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-1">Qtd:</label>
+                                <input type="number" id="quantity-1" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-real-madrid"
+                                data-name="Camisa Real Madrid 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-real-madrid-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-bayern-munich-2025.jpg" alt="Camisa Bayern de Munique 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Bayern de Munique 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-2">Qtd:</label>
+                                <input type="number" id="quantity-2" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-bayern-munich"
+                                data-name="Camisa Bayern de Munique 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-bayern-munich-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-manchester-city-2025.jpg" alt="Camisa Manchester City 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Manchester City 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-3">Qtd:</label>
+                                <input type="number" id="quantity-3" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-manchester-city"
+                                data-name="Camisa Manchester City 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-manchester-city-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-juventus-2025.jpg" alt="Camisa Juventus 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Juventus 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-4">Qtd:</label>
+                                <input type="number" id="quantity-4" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-juventus"
+                                data-name="Camisa Juventus 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-juventus-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-liverpool-2025.jpg" alt="Camisa Liverpool 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Liverpool 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-5">Qtd:</label>
+                                <input type="number" id="quantity-5" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-liverpool"
+                                data-name="Camisa Liverpool 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-liverpool-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-barcelona-2025.jpg" alt="Camisa Barcelona 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Barcelona 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-6">Qtd:</label>
+                                <input type="number" id="quantity-6" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-barcelona"
+                                data-name="Camisa Barcelona 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-barcelona-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-psg-2025.jpg" alt="Camisa PSG 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa PSG 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-7">Qtd:</label>
+                                <input type="number" id="quantity-7" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-psg"
+                                data-name="Camisa PSG 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-psg-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-milan-2025.jpg" alt="Camisa Milan 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Milan 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-8">Qtd:</label>
+                                <input type="number" id="quantity-8" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-milan"
+                                data-name="Camisa Milan 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-milan-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-arsenal-2025.jpg" alt="Camisa Arsenal 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Arsenal 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-9">Qtd:</label>
+                                <input type="number" id="quantity-9" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-arsenal"
+                                data-name="Camisa Arsenal 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-arsenal-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-borussia-2025.jpg" alt="Camisa Borussia Dortmund 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Borussia Dortmund 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-10">Qtd:</label>
+                                <input type="number" id="quantity-10" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-borussia"
+                                data-name="Camisa Borussia Dortmund 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-borussia-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-chelsea-2025.jpg" alt="Camisa Chelsea 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Chelsea 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                                <span class="size-box" data-size="G">G</span>
+                                <span class="size-box" data-size="GG">GG</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-11">Qtd:</label>
+                                <input type="number" id="quantity-11" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-chelsea"
+                                data-name="Camisa Chelsea 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-chelsea-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./img/camisa-tottenham-2025.jpg" alt="Camisa Tottenham Hotspur 2025/26">
+                        <div class="price-info">
+                            <h3 class="card-name">Camisa Tottenham Hotspur 2025/26</h3>
+                            <p class="old-price">R$ 189,90</p>
+                            <p class="card-price">R$ 119,90</p>
+                            <p class="installments">em até 12x de R$ 9,99</p>
+                        </div>
+                        <div class="size-and-quantity">
+                            <div class="size-options">
+                                <p>Tamanho:</p>
+                                <span class="size-box" data-size="P">P</span>
+                                <span class="size-box" data-size="M">M</span>
+                            </div>
+                            <div class="quantity-container hidden">
+                                <label for="quantity-12">Qtd:</label>
+                                <input type="number" id="quantity-12" value="1" min="1" max="10">
+                            </div>
+                            <button class="btn add-to-cart-btn hidden"
+                                data-id="camisa-tottenham"
+                                data-name="Camisa Tottenham Hotspur 2025/26"
+                                data-price="119.90"
+                                data-image="./img/camisa-tottenham-2025.jpg">
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <button id="products-next" class="arrow-btn"><i class="fa-solid fa-angle-right"></i></button>
-            </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="./img/camisa-real-madrid-2025.jpg" alt="Camisa Real Madrid 2025/26">
-                    <div class="discount-badge">Lançamento</div>
-                    <div class="price-info">
-                        <p class="old-price">R$ 300,00</p>
-                        <h3 class="card-name">Camisa Real Madrid 2025/26</h3>
-                        <p class="card-price">R$ 279,90</p>
-                        <p class="installments">em até 12x de R$ 23,32</p>
-                    </div>
-                    <button class="btn add-to-cart-btn"
-                        data-id="camisa-real-madrid"
-                        data-name="Camisa Real Madrid 2025/26"
-                        data-price="279.90"
-                        data-image="./img/camisa-real-madrid-2025.jpg">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-                <div class="product-card">
-                    <img src="./img/camisa-bayern-munich-2025.jpg" alt="Camisa Bayern de Munique 2025/26">
-                    <div class="price-info">
-                        <h3 class="card-name">Camisa Bayern de Munique 2025/26</h3>
-                        <p class="card-price">R$ 299,90</p>
-                        <p class="installments">em até 12x de R$ 24,99</p>
-                    </div>
-                    <button class="btn add-to-cart-btn"
-                        data-id="camisa-bayern-munich"
-                        data-name="Camisa Bayern de Munique 2025/26"
-                        data-price="299.90"
-                        data-image="./img/camisa-bayern-munich-2025.jpg">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-                <div class="product-card">
-                    <img src="./img/camisa-manchester-city-2025.jpg" alt="Camisa Manchester City 2025/26">
-                    <div class="price-info">
-                        <h3 class="card-name">Camisa Manchester City 2025/26</h3>
-                        <p class="card-price">R$ 289,90</p>
-                        <p class="installments">em até 12x de R$ 24,15</p>
-                    </div>
-                    <button class="btn add-to-cart-btn"
-                        data-id="camisa-manchester-city"
-                        data-name="Camisa Manchester City 2025/26"
-                        data-price="289.90"
-                        data-image="./img/camisa-manchester-city-2025.jpg">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-                <div class="product-card">
-                    <img src="./img/camisa-juventus-2025.jpg" alt="Camisa Juventus 2025/26">
-                    <div class="price-info">
-                        <h3 class="card-name">Camisa Juventus 2025/26</h3>
-                        <p class="card-price">R$ 259,90</p>
-                        <p class="installments">em até 12x de R$ 21,65</p>
-                    </div>
-                    <button class="btn add-to-cart-btn"
-                        data-id="camisa-juventus"
-                        data-name="Camisa Juventus 2025/26"
-                        data-price="259.90"
-                        data-image="./img/camisa-juventus-2025.jpg">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
-                <div class="product-card">
-                    <img src="./img/camisa-liverpool-2025.jpg" alt="Camisa Liverpool 2025/26">
-                    <div class="price-info">
-                        <h3 class="card-name">Camisa Liverpool 2025/26</h3>
-                        <p class="card-price">R$ 269,90</p>
-                        <p class="installments">em até 12x de R$ 22,49</p>
-                    </div>
-                    <button class="btn add-to-cart-btn"
-                        data-id="camisa-liverpool"
-                        data-name="Camisa Liverpool 2025/26"
-                        data-price="269.90"
-                        data-image="./img/camisa-liverpool-2025.jpg">
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
             </div>
         </section>
 
         <section id="feedbacks">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="feedbacks-container">
-            <div class="feedbacks-scroller">
-                <div class="feedback-card">
-                    <div class="feedback-avatar">AM</div>
-                    <p class="feedback-name">Ana M.</p>
-                    <p class="feedback-location">Brasília, DF</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
+            <h2>O que nossos clientes dizem</h2>
+            <div class="feedbacks-container">
+                <div class="feedbacks-scroller">
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">AM</div>
+                        <p class="feedback-name">Ana M.</p>
+                        <p class="feedback-location">Brasília, DF</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"Camisa chegou certinha! Tecido é top e o caimento ficou show. Com ctz vou comprar mais."</p>
                     </div>
-                    <p class="feedback-text">"O Apple Watch superou minhas expectativas! A entrega foi super rápida e o atendimento impecável. Exatamente o que eu procurava."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">PL</div>
-                    <p class="feedback-name">Pedro L.</p>
-                    <p class="feedback-location">São Paulo, SP</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">PL</div>
+                        <p class="feedback-name">Pedro L.</p>
+                        <p class="feedback-location">São Paulo, SP</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-empty">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa é daora, mas a entrega demorou um pouco. O produto em si é sensacional, valeu a pena a espera."</p>
                     </div>
-                    <p class="feedback-text">"Qualidade de som absurda, mas a entrega poderia ter sido um pouco mais rápida. Fora isso, os Air Pods Max são incríveis."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">MC</div>
-                    <p class="feedback-name">Maria C.</p>
-                    <p class="feedback-location">Belo Horizonte, MG</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">MC</div>
+                        <p class="feedback-name">Maria C.</p>
+                        <p class="feedback-location">Belo Horizonte, MG</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"A qualidade da blusa do Real Madrid é mt boa! Só não dei 5 estrelas pq a embalagem veio um pouco zuada, mas a blusa tava inteira."</p>
                     </div>
-                    <p class="feedback-text">"O MacBook Pro é uma máquina poderosa, porém a embalagem chegou com um pequeno amassado. O produto em si estava perfeito."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">JF</div>
-                    <p class="feedback-name">João F.</p>
-                    <p class="feedback-location">Rio de Janeiro, RJ</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">JF</div>
+                        <p class="feedback-name">João F.</p>
+                        <p class="feedback-location">Rio de Janeiro, RJ</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa do Barcelona é perfeita, idêntica a do time. A única coisa é que senti falta de mais opções de tamanhos na hora de comprar."</p>
                     </div>
-                    <p class="feedback-text">"A experiência com o Vision Pro é fantástica. A bateria poderia durar um pouco mais, mas de resto, tudo perfeito."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">JS</div>
-                    <p class="feedback-name">Julia S.</p>
-                    <p class="feedback-location">Porto Alegre, RS</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">JS</div>
+                        <p class="feedback-name">Julia S.</p>
+                        <p class="feedback-location">Porto Alegre, RS</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"O site é fácil de usar e o atendimento foi rápido. Tive um pequeno atraso na entrega, mas o produto (camisa do PSG) é de altíssima qualidade."</p>
                     </div>
-                    <p class="feedback-text">"Gostei muito do atendimento, mas tive um pequeno atraso na confirmação do pedido. O produto (iPad) é de altíssima qualidade."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">CB</div>
-                    <p class="feedback-name">Carlos B.</p>
-                    <p class="feedback-location">Curitiba, PR</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">CB</div>
+                        <p class="feedback-name">Carlos B.</p>
+                        <p class="feedback-location">Curitiba, PR</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa do Bayern chegou super rápido e veio exatamente como eu pedi. A loja é mto confiável e o produto veio lacrado. Perfeito!"</p>
                     </div>
-                    <p class="feedback-text">"Comprei um iPhone e recebi no dia seguinte! A loja é muito ágil e o produto veio lacrado. Perfeito!"</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">HK</div>
-                    <p class="feedback-name">Helena K.</p>
-                    <p class="feedback-location">Salvador, BA</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">HK</div>
+                        <p class="feedback-name">Helena K.</p>
+                        <p class="feedback-location">Salvador, BA</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"O produto  é ótimo. Só senti falta de mais opções de times disponíveis no site."</p>
                     </div>
-                    <p class="feedback-text">"O Apple Watch é ótimo para a minha rotina. O site é fácil de usar, só senti falta de mais opções de pulseiras."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">RR</div>
-                    <p class="feedback-name">Roberto R.</p>
-                    <p class="feedback-location">Recife, PE</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">RR</div>
+                        <p class="feedback-name">Roberto R.</p>
+                        <p class="feedback-location">Recife, PE</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <p class="feedback-text">"Meia estrela a menos só pq a caixa da minha blusa do City veio com um pequeno arranhão, mas a camisa em si é sensacional."</p>
                     </div>
-                    <p class="feedback-text">"Meia estrela a menos só porque a caixa do meu Air Pods Pro veio com um arranhão superficial, mas o produto em si é sensacional."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">AM</div>
-                    <p class="feedback-name">Ana M.</p>
-                    <p class="feedback-location">Brasília, DF</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">FG</div>
+                        <p class="feedback-name">Felipe G.</p>
+                        <p class="feedback-location">Florianópolis, SC</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"A qualidade da camisa do Milan é show de bola! O material é leve e mt confortável. Chegou super rápido. Recomendo dms!"</p>
                     </div>
-                    <p class="feedback-text">"O Apple Watch superou minhas expectativas! A entrega foi super rápida e o atendimento impecável. Exatamente o que eu procurava."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">PL</div>
-                    <p class="feedback-name">Pedro L.</p>
-                    <p class="feedback-location">São Paulo, SP</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">LV</div>
+                        <p class="feedback-name">Luiza V.</p>
+                        <p class="feedback-location">Vitória, ES</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <p class="feedback-text">"Comprei a camisa da Juventus e fiquei super satisfeita. O escudo bordado é perfeito. Só achei o frete um pouco caro pro meu estado."</p>
                     </div>
-                    <p class="feedback-text">"Qualidade de som absurda, mas a entrega poderia ter sido um pouco mais rápida. Fora isso, os Air Pods Max são incríveis."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">MC</div>
-                    <p class="feedback-name">Maria C.</p>
-                    <p class="feedback-location">Belo Horizonte, MG</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">DS</div>
+                        <p class="feedback-name">Daniel S.</p>
+                        <p class="feedback-location">Goiânia, GO</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa do Chelsea é simplesmente linda! A cor é vibrante e o material parece ser mto durável. O site é bem confiável e a compra foi tranquilassa."</p>
                     </div>
-                    <p class="feedback-text">"O MacBook Pro é uma máquina poderosa, porém a embalagem chegou com um pequeno amassado. O produto em si estava perfeito."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">JF</div>
-                    <p class="feedback-name">João F.</p>
-                    <p class="feedback-location">Rio de Janeiro, RJ</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">TB</div>
+                        <p class="feedback-name">Thais B.</p>
+                        <p class="feedback-location">Campinas, SP</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"Gostei muito da camisa do Tottenham, mas a entrega demorou mais que o esperado. O atendimento foi show e me ajudou a rastrear o pedido."</p>
                     </div>
-                    <p class="feedback-text">"A experiência com o Vision Pro é fantástica. A bateria poderia durar um pouco mais, mas de resto, tudo perfeito."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">JS</div>
-                    <p class="feedback-name">Julia S.</p>
-                    <p class="feedback-location">Porto Alegre, RS</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">PC</div>
+                        <p class="feedback-name">Paulo C.</p>
+                        <p class="feedback-location">Fortaleza, CE</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"Comprei a camisa do Borussia e ela é perfeita! Ótimo acabamento e chegou super rápido. Já virei cliente fiel!"</p>
                     </div>
-                    <p class="feedback-text">"Gostei muito do atendimento, mas tive um pequeno atraso na confirmação do pedido. O produto (iPad) é de altíssima qualidade."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">CB</div>
-                    <p class="feedback-name">Carlos B.</p>
-                    <p class="feedback-location">Curitiba, PR</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">RL</div>
+                        <p class="feedback-name">Roberta L.</p>
+                        <p class="feedback-location">Manaus, AM</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa do Arsenal é linda, mas o tamanho P ficou um pouco grandinho. A troca foi bem fácil e o suporte me ajudou em tudo."</p>
                     </div>
-                    <p class="feedback-text">"Comprei um iPhone e recebi no dia seguinte! A loja é muito ágil e o produto veio lacrado. Perfeito!"</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">HK</div>
-                    <p class="feedback-name">Helena K.</p>
-                    <p class="feedback-location">Salvador, BA</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-empty">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">EC</div>
+                        <p class="feedback-name">Eduardo C.</p>
+                        <p class="feedback-location">Belo Horizonte, MG</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"A melhor loja pra comprar blusa de time! A variedade é show e a qualidade é nota 10. Recomendo pra todos os meus amigos."</p>
                     </div>
-                    <p class="feedback-text">"O Apple Watch é ótimo para a minha rotina. O site é fácil de usar, só senti falta de mais opções de pulseiras."</p>
-                </div>
-                <div class="feedback-card">
-                    <div class="feedback-avatar">RR</div>
-                    <p class="feedback-name">Roberto R.</p>
-                    <p class="feedback-location">Recife, PE</p>
-                    <div class="stars">
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-filled">★</span>
-                        <span class="star-half">★</span>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">MF</div>
+                        <p class="feedback-name">Mariana F.</p>
+                        <p class="feedback-location">Salvador, BA</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-empty">★</span>
+                            <span class="star-empty">★</span>
+                        </div>
+                        <p class="feedback-text">"Gostei da camisa do Chelsea, mas o tecido é um pouco diferente do que eu esperava. A entrega foi rápida, o que já ajuda mt."</p>
                     </div>
-                    <p class="feedback-text">"Meia estrela a menos só porque a caixa do meu Air Pods Pro veio com um arranhão superficial, mas o produto em si é sensacional."</p>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">GP</div>
+                        <p class="feedback-name">Gabriel P.</p>
+                        <p class="feedback-location">Brasília, DF</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-half">★</span>
+                        </div>
+                        <p class="feedback-text">"A camisa do Bayern é sensacional, igualzinha à original. A embalagem poderia ser mais discreta, mas o produto chegou em perfeitas condições."</p>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="feedback-avatar">CS</div>
+                        <p class="feedback-name">Camila S.</p>
+                        <p class="feedback-location">São Paulo, SP</p>
+                        <div class="stars">
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                            <span class="star-filled">★</span>
+                        </div>
+                        <p class="feedback-text">"Sempre compro na Purpinne e nunca me decepciono. A qualidade das blusas é excelente e a entrega é sempre no prazo. Recomendo dms!"</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
     <footer>
