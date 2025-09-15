@@ -1,0 +1,106 @@
+/* Estilos Específicos para a Página de Cadastro */
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.form-container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+/* Adicione este código no final do seu arquivo cadastro.css */
+
+.input-group-inline {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group-inline .input-group {
+    flex: 1;
+}
+
+.cep-link {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: var(--text-color);
+    text-align: right;
+    text-decoration: none;
+}
+
+.cep-link:hover {
+    text-decoration: underline;
+}
+
+.form-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.login-link {
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+}

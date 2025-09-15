@@ -11,7 +11,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Purpinne - Carrinho</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Purpinne - Cadastro</title>
 </head>
 
 <body>
@@ -41,25 +42,29 @@
         </div>
     </header>
 
-    <main class="cart-page">
-        <h2>Seu Carrinho</h2>
-        <div class="cart-items-list" id="cart-items-list">
-        </div>
-
-        <div class="cart-summary">
-            <div class="summary-line">
-                <span>Subtotal:</span>
-                <span id="subtotal">R$ 0,00</span>
-            </div>
-            <div class="summary-line">
-                <span>Frete:</span>
-                <span id="shipping">Grátis</span>
-            </div>
-            <div class="summary-line total-line">
-                <span>Total:</span>
-                <span id="total">R$ 0,00</span>
-            </div>
-            <a href="checkout.html" class="btn checkout-btn">Finalizar Compra</a>
+    <main class="registration-page">
+        <div class="form-container">
+            <h2 class="form-title">Crie sua conta</h2>
+            <form action="#" method="post" class="registration-form">
+                <div class="input-group">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirmar senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+            <p class="login-link">Já tem uma conta? <a href="#">Faça login</a></p>
         </div>
     </main>
 

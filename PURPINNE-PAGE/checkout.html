@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css"> <title>Purpinne - Finalizar Compra</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+            <img src="./img/image_5c02bd.png" alt="Logo da Purpinne Store">
+        </div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#produtos-lista">Produtos</a></li>
+                <li><a href="index.html#feedbacks">Feedbacks</a></li>
+                <li><a href="cadastro.html">Login</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main class="registration-page">
+        <div class="form-container">
+            <h2 class="form-title">Dados de Envio</h2>
+            <form action="#" method="post" class="shipping-form">
+                <div class="input-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="Apenas números" required>
+                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" class="cep-link">Não sei meu CEP</a>
+                </div>
+                <div class="input-group">
+                    <label for="logradouro">Rua/Avenida</label>
+                    <input type="text" id="logradouro" name="logradouro" required>
+                </div>
+                <div class="input-group-inline">
+                    <div class="input-group">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+                <div class="input-group-inline">
+                    <div class="input-group">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" maxlength="2" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Continuar para o Pagamento</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Purpinne Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
