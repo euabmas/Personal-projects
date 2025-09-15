@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Purpinne - Carrinho</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+    <img src="./img/logo.png" alt="Logo da Purpinne Store">
+</div>
+</div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#produtos-lista">Produtos</a></li>
+                <li><a href="index.html#feedbacks">Feedbacks</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <h2>Seu Carrinho</h2>
+        <div class="cart-items-list">
+            </div>
+
+        <div class="cart-summary">
+            <div class="summary-line">
+                <span>Subtotal:</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+            <div class="summary-line">
+                <span>Frete:</span>
+                <span id="shipping">Grátis</span>
+            </div>
+            <div class="summary-line total-line">
+                <span>Total:</span>
+                <span id="total">R$ 0,00</span>
+            </div>
+            <button class="btn checkout-btn">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abmas Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

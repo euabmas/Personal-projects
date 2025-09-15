@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Purpinne - A sua segunda pele</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">
+            <img src="./img/image_5c02bd.png" alt="Logo da Purpinne Store">
+        </div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos-lista">Produtos</a></li>
+                <li><a href="#feedbacks">Feedbacks</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="home">
+            <div class="list">
+                <div class="item active">
+                    <div class="product-img">
+                        <img src="./img/camisa-real-madrid-2025.jpg" alt="Camisa Real Madrid 2025/26">
+                    </div>
+                    <div class="content">
+                        <p class="product-tag">Lançamento</p>
+                        <h2 class="product-name">Camisa Real Madrid 2025/26</h2>
+                        <p class="description">Vista a paixão e a história do maior clube do mundo! A nova camisa do Real Madrid para a temporada 2025/26 é um ícone de elegância e glória. Feita com tecido de alta tecnologia para máximo conforto e desempenho.</p>
+                        <a href="produto-detalhes.html" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="product-img">
+                        <img src="./img/camisa-bayern-munich-2025.jpg" alt="Camisa Bayern de Munique">
+                    </div>
+                    <div class="content">
+                        <p class="product-tag">Destaque</p>
+                        <h2 class="product-name">Camisa Bayern de Munique 2025/26</h2>
+                        <p class="description">Celebre a tradição e o futuro do gigante bávaro. A camisa 2025/26 combina as cores clássicas com um design inovador, perfeito para os torcedores que respiram futebol e vitórias.</p>
+                        <a href="produto-detalhes.html" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="product-img">
+                        <img src="./img/camisa-manchester-city-2025.jpg" alt="Camisa Manchester City">
+                    </div>
+                    <div class="content">
+                        <p class="product-tag">Mais Vendido</p>
+                        <h2 class="product-name">Camisa Manchester City 2025/26</h2>
+                        <p class="description">Domine o estilo urbano e a paixão pelo City. A camisa da temporada 2025/26 é a escolha ideal para quem busca modernidade e desempenho, dentro e fora de campo.</p>
+                        <a href="produto-detalhes.html" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev" class="arrow-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next" class="arrow-btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="indicators">
+                <div class="numbers">
+                    <span class="current-number">1</span>
+                    <span class="total-number">/3</span>
+                </div>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="tech-circle">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <section id="produtos-lista">
+            <h2>Nossos Produtos</h2>
+            <div class="products-arrows">
+                <button id="products-prev" class="arrow-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="products-next" class="arrow-btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="./img/camisa-real-madrid-2025.jpg" alt="Camisa Real Madrid 2025/26">
+                    <div class="discount-badge">Lançamento</div>
+                    <div class="price-info">
+                        <p class="old-price">R$ 300,00</p>
+                        <h3 class="card-name">Camisa Real Madrid 2025/26</h3>
+                        <p class="card-price">R$ 279,90</p>
+                        <p class="installments">em até 12x de R$ 23,32</p>
+                    </div>
+                    <button class="btn add-to-cart-btn"
+                        data-id="camisa-real-madrid"
+                        data-name="Camisa Real Madrid 2025/26"
+                        data-price="279.90"
+                        data-image="./img/camisa-real-madrid-2025.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/camisa-bayern-munich-2025.jpg" alt="Camisa Bayern de Munique 2025/26">
+                    <div class="price-info">
+                        <h3 class="card-name">Camisa Bayern de Munique 2025/26</h3>
+                        <p class="card-price">R$ 299,90</p>
+                        <p class="installments">em até 12x de R$ 24,99</p>
+                    </div>
+                    <button class="btn add-to-cart-btn"
+                        data-id="camisa-bayern-munich"
+                        data-name="Camisa Bayern de Munique 2025/26"
+                        data-price="299.90"
+                        data-image="./img/camisa-bayern-munich-2025.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/camisa-manchester-city-2025.jpg" alt="Camisa Manchester City 2025/26">
+                    <div class="price-info">
+                        <h3 class="card-name">Camisa Manchester City 2025/26</h3>
+                        <p class="card-price">R$ 289,90</p>
+                        <p class="installments">em até 12x de R$ 24,15</p>
+                    </div>
+                    <button class="btn add-to-cart-btn"
+                        data-id="camisa-manchester-city"
+                        data-name="Camisa Manchester City 2025/26"
+                        data-price="289.90"
+                        data-image="./img/camisa-manchester-city-2025.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/camisa-juventus-2025.jpg" alt="Camisa Juventus 2025/26">
+                    <div class="price-info">
+                        <h3 class="card-name">Camisa Juventus 2025/26</h3>
+                        <p class="card-price">R$ 259,90</p>
+                        <p class="installments">em até 12x de R$ 21,65</p>
+                    </div>
+                    <button class="btn add-to-cart-btn"
+                        data-id="camisa-juventus"
+                        data-name="Camisa Juventus 2025/26"
+                        data-price="259.90"
+                        data-image="./img/camisa-juventus-2025.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/camisa-liverpool-2025.jpg" alt="Camisa Liverpool 2025/26">
+                    <div class="price-info">
+                        <h3 class="card-name">Camisa Liverpool 2025/26</h3>
+                        <p class="card-price">R$ 269,90</p>
+                        <p class="installments">em até 12x de R$ 22,49</p>
+                    </div>
+                    <button class="btn add-to-cart-btn"
+                        data-id="camisa-liverpool"
+                        data-name="Camisa Liverpool 2025/26"
+                        data-price="269.90"
+                        data-image="./img/camisa-liverpool-2025.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedbacks">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="feedbacks-container">
+            <div class="feedbacks-scroller">
+                <div class="feedback-card">
+                    <div class="feedback-avatar">AM</div>
+                    <p class="feedback-name">Ana M.</p>
+                    <p class="feedback-location">Brasília, DF</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    <p class="feedback-text">"O Apple Watch superou minhas expectativas! A entrega foi super rápida e o atendimento impecável. Exatamente o que eu procurava."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">PL</div>
+                    <p class="feedback-name">Pedro L.</p>
+                    <p class="feedback-location">São Paulo, SP</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"Qualidade de som absurda, mas a entrega poderia ter sido um pouco mais rápida. Fora isso, os Air Pods Max são incríveis."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">MC</div>
+                    <p class="feedback-name">Maria C.</p>
+                    <p class="feedback-location">Belo Horizonte, MG</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"O MacBook Pro é uma máquina poderosa, porém a embalagem chegou com um pequeno amassado. O produto em si estava perfeito."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">JF</div>
+                    <p class="feedback-name">João F.</p>
+                    <p class="feedback-location">Rio de Janeiro, RJ</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                    </div>
+                    <p class="feedback-text">"A experiência com o Vision Pro é fantástica. A bateria poderia durar um pouco mais, mas de resto, tudo perfeito."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">JS</div>
+                    <p class="feedback-name">Julia S.</p>
+                    <p class="feedback-location">Porto Alegre, RS</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"Gostei muito do atendimento, mas tive um pequeno atraso na confirmação do pedido. O produto (iPad) é de altíssima qualidade."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">CB</div>
+                    <p class="feedback-name">Carlos B.</p>
+                    <p class="feedback-location">Curitiba, PR</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    <p class="feedback-text">"Comprei um iPhone e recebi no dia seguinte! A loja é muito ágil e o produto veio lacrado. Perfeito!"</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">HK</div>
+                    <p class="feedback-name">Helena K.</p>
+                    <p class="feedback-location">Salvador, BA</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"O Apple Watch é ótimo para a minha rotina. O site é fácil de usar, só senti falta de mais opções de pulseiras."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">RR</div>
+                    <p class="feedback-name">Roberto R.</p>
+                    <p class="feedback-location">Recife, PE</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                    </div>
+                    <p class="feedback-text">"Meia estrela a menos só porque a caixa do meu Air Pods Pro veio com um arranhão superficial, mas o produto em si é sensacional."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">AM</div>
+                    <p class="feedback-name">Ana M.</p>
+                    <p class="feedback-location">Brasília, DF</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    <p class="feedback-text">"O Apple Watch superou minhas expectativas! A entrega foi super rápida e o atendimento impecável. Exatamente o que eu procurava."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">PL</div>
+                    <p class="feedback-name">Pedro L.</p>
+                    <p class="feedback-location">São Paulo, SP</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"Qualidade de som absurda, mas a entrega poderia ter sido um pouco mais rápida. Fora isso, os Air Pods Max são incríveis."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">MC</div>
+                    <p class="feedback-name">Maria C.</p>
+                    <p class="feedback-location">Belo Horizonte, MG</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"O MacBook Pro é uma máquina poderosa, porém a embalagem chegou com um pequeno amassado. O produto em si estava perfeito."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">JF</div>
+                    <p class="feedback-name">João F.</p>
+                    <p class="feedback-location">Rio de Janeiro, RJ</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                    </div>
+                    <p class="feedback-text">"A experiência com o Vision Pro é fantástica. A bateria poderia durar um pouco mais, mas de resto, tudo perfeito."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">JS</div>
+                    <p class="feedback-name">Julia S.</p>
+                    <p class="feedback-location">Porto Alegre, RS</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"Gostei muito do atendimento, mas tive um pequeno atraso na confirmação do pedido. O produto (iPad) é de altíssima qualidade."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">CB</div>
+                    <p class="feedback-name">Carlos B.</p>
+                    <p class="feedback-location">Curitiba, PR</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    <p class="feedback-text">"Comprei um iPhone e recebi no dia seguinte! A loja é muito ágil e o produto veio lacrado. Perfeito!"</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">HK</div>
+                    <p class="feedback-name">Helena K.</p>
+                    <p class="feedback-location">Salvador, BA</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">★</span>
+                    </div>
+                    <p class="feedback-text">"O Apple Watch é ótimo para a minha rotina. O site é fácil de usar, só senti falta de mais opções de pulseiras."</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-avatar">RR</div>
+                    <p class="feedback-name">Roberto R.</p>
+                    <p class="feedback-location">Recife, PE</p>
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-half">★</span>
+                    </div>
+                    <p class="feedback-text">"Meia estrela a menos só porque a caixa do meu Air Pods Pro veio com um arranhão superficial, mas o produto em si é sensacional."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Purpinne Store. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Purpinne Store - Camisa do Real Madrid</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="logo">Purpinne Store</div>
+        <nav>
+            <ul class="desktop-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos-lista">Produtos</a></li>
+                <li><a href="index.html#feedbacks">Feedbacks</a></li>
+                <li>
+                    <a href="carrinho.html" class="cart-link" id="cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main class="product-page-container">
+        <div class="product-image-container">
+            <img src="./img/camisa-real-madrid-2025.jpg" alt="Camisa Real Madrid 2025/26" class="main-product-image">
+            <div class="thumbnail-container">
+                <img src="./img/camisa-real-madrid-2025-thumb1.jpg" alt="Thumbnail 1">
+                <img src="./img/camisa-real-madrid-2025-thumb2.jpg" alt="Thumbnail 2">
+                <img src="./img/camisa-real-madrid-2025-thumb3.jpg" alt="Thumbnail 3">
+            </div>
+        </div>
+        <div class="product-info-section">
+            <h1 class="product-name">Camisa Real Madrid 2025/26 Home</h1>
+            <p class="product-price">R$ 279,90</p>
+            <div class="product-options-section">
+                <h3>Selecione o tamanho:</h3>
+                <div class="size-options">
+                    <div class="size-box" data-size="P">P</div>
+                    <div class="size-box active" data-size="M">M</div>
+                    <div class="size-box" data-size="G">G</div>
+                    <div class="size-box" data-size="GG">GG</div>
+                </div>
+            </div>
+
+            <div class="product-options-section">
+                <h3>Selecione a cor:</h3>
+                <div class="color-options">
+                    <div class="color-box active" style="background-color: #fff; border-color: #8A2BE2; color: #000;" data-color="white"></div>
+                    <div class="color-box" style="background-color: #000; color: #fff;" data-color="black"></div>
+                    <div class="color-box" style="background-color: #8A2BE2; color: #fff;" data-color="blue"></div>
+                </div>
+            </div>
+
+            <div class="quantity-section">
+                <label for="quantity-input">Quantidade:</label>
+                <input type="number" id="quantity-input" value="1" min="1" max="10">
+            </div>
+
+            <p class="product-description">
+                Vista a paixão e a história do maior clube do mundo! A nova camisa do Real Madrid para a temporada 2025/26 é um ícone de elegância e glória. Feita com tecido de alta tecnologia para máximo conforto e desempenho. Detalhes bordados de alta qualidade.
+            </p>
+
+            <div class="product-specifications">
+                <h3>Especificações Técnicas</h3>
+                <ul>
+                    <li>Material: 100% Poliéster Reciclado com Tecnologia AeroReady.</li>
+                    <li>Tecnologia: Absorve o suor para manter o corpo seco e confortável.</li>
+                    <li>Design: Gola careca canelada, punhos e barra alongada na parte de trás.</li>
+                    <li>Detalhes: Escudo do clube e logo do fabricante bordados.</li>
+                    <li>Sustentabilidade: Confeccionada com materiais que ajudam a reduzir o impacto ambiental.</li>
+                </ul>
+            </div>
+
+            <button class="btn add-to-cart-btn" data-product-id="camisa-real-madrid" data-product-name="Camisa Real Madrid 2025/26 Home" data-product-price="279.90">
+                <i class="fa-solid fa-cart-plus"></i>
+                Adicionar ao Carrinho
+            </button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
